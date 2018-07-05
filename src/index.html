@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Stocks Monitoring App</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  <body>
+    <div class="topRow"> 
+      <marquee><p><span id="headlinesPlus"></span><span  id="headlinesDown"></span> | <span id="headlinesPlus2"></span><span  id="headlinesDown2"></span></p></marquee>
+      <!-- <marquee><p id="headlinesDown"></p></marquee>   -->
+
+    </div>
+    <div>
+      <h3 id="Dashboard"><a id="dashA" href="dashboard.html">Dashboard<!-- <sub id="beta">Beta</sub> --></a></h3>
+    </div>
+     <div>
+      <h2><span id="userNameDb"> </span></h2>
+      <h2 id="logOut"><a id="logA" href="home.html"> Logout </a></h2>
+    </div>
+    
+    <div class="row">
+      <div id="price-container">
+        <p class="subtext">Current BTC USD</p>
+        <h1 id="price">Loading..</h1>
+      </div>
+      <div id="goal-container">
+        <p><img src="../assets/images/up.svg"><span id="targetPrice">Choose a Target Price</span></p>
+      </div>
+      <div id="right-container">
+        <button id="notifyBtn">Notify me when..</button>
+        <button id="newWindowBtc"><a href="newWinBtc.html">Open in New window</a></button>
+      </div>
+      <div class="graph">
+        <canvas id="ChartBtc" ></canvas>
+       <!--  <div style="float: right;">
+          <form>
+          <input type="radio" id="lineGra" name="gender" value="line"> Line <br>
+          <input type="radio" id="barGra" name="gender" value="bar"> Bar<br>
+          
+        </form>  
+        </div>
+         -->
+      </div>
+       <div id="searchBox">
+        <h3 style="float: right;" id="prevBtc"></h3>
+        <!-- <input type="date" id="BtcInq">
+        <input type="submit" id="BtcSubmit" value="Search"> -->
+        <input style="float: left; height: 32px" type="date" id="BtcInq">
+        <button style="float: right; margin: 0 auto;" id="BtcSubmit">Search</button>
+      </div>
+      <!-- <div class="graphType">
+        <form method="POST">
+          <p>Select graph type</p>
+          <label>Line Graph</label>
+          <input type="radio" name="typeOfGraph" value="lineGraph" checked="checked">
+          <label>Bar Graph</label>
+          <input type="radio" name="typeOfGraph" value="barGraph">
+          <label>Pie Chart</label>
+          <input type="radio" name="typeOfGraph" value="pieGraph">
+          <button id="graphTypebtn" >Generate</button>
+        </form>
+      </div> -->
+    </div>
+    <div class="row">
+      <div id="price-container">
+        <p class="subtext">Current Sensex </p>
+        <h1 id="priceSensex">Loading..</h1>
+        <small id="lastRefreshAt"></small>
+      </div>
+      <div id="goal-container">
+       <p><img src="../assets/images/up.svg"><span id="BsetargetPrice">Choose a Target Price</span></p>
+      </div>
+      <div id="right-container">
+        <button id="notifyBtn2">Notify me when..</button>
+        <button id="newWindowBtc"><a href="newWinBse.html">Open in New window</a></button>
+      </div>
+      <div class="graph">
+        <canvas id="sensexChart" ></canvas>
+        <!--  <div style="float: right;">
+          <form>
+          <input type="radio" id="lineGr" name="gender" value="line" checked> Line <br>
+          <input type="radio" id="barGr" name="gender" value="bar"> Bar<br>
+          <! <input type="radio" name="gender" value="other"> Other  --> 
+        <!-- </form>  
+        </div> --> 
+      </div>
+      <div id="searchBox">
+        <h3 style="float: right;" id="prevBSe"></h3>
+        <!-- <input type="date" id="BseInq">
+        <input type="submit" id="BseSubmit" value="Search"> -->
+        <input style="float: left; height: 32px" type="date" id="BseInq">
+        <button style="float: right; margin: 0 auto;" id="BseSubmit">Search</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="price-container">
+        <p class="subtext">Current Gold Rate</p>
+        <h1 id="priceGold">Loading..</h1>
+        <!-- <p>Last refreshed at: <span id="refreshGold" >Loading...</span></p> -->
+      </div>
+      <div id="goal-container">
+        <p><img src="../assets/images/up.svg"><span id="GoldtargetPrice">Choose a Target Price</span></p>
+
+        
+
+      </div>
+      <!-- <div>
+         <h3 id="prevGold"></h3>
+      </div> -->
+      <div id="right-container">
+        <button id="notifyBtn3">Notify me when..</button>
+        <button id="newWindowBtc"><a style="color: #fff; text-decoration: none;" href="newWinGold.html"> Open in New window </a></button>
+        <button style="margin-top: 3%; background-color: #5a7a2d;"><a style="color: #fff; text-decoration: none;" href="goldCompare.html">city wise gold rate comparison</a> </button>
+
+      </div>
+      <div class="graph">
+        <canvas id="goldChart" ></canvas>
+
+      </div>
+      <div id="searchBox">
+        <h3 style="float: right;" id="prevGold"></h3>
+        <input style="float: left; height: 32px" type="date" id="goldInq">
+        <button style="float: right; margin: 0 auto;" id="goldSubmit">Search</button>
+      </div>
+
+    </div>
+    <div class="row"> 
+      
+    </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.9/howler.core.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+    
+  </body>
+</html>
+

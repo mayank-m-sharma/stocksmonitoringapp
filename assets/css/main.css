@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+
+body {
+    background: #262626;
+    color:#fff;
+    font-family: 'Montserrat';
+    margin:0;
+}
+#beta{
+    font-size: 10px;
+    color: yellow;
+}
+
+#dashA, a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*#dashA:hover{
+    border-radius: 
+}*/
+
+
+
+#logA {
+    text-decoration: none;
+    float: right;
+    color: #edaa1a;
+}
+#Dashboard{
+    margin: 0;
+   /* width: 100px;*/
+   float: left;
+   margin-left: 1%;
+}
+h2{
+    margin: 0;
+    text-align: right;
+     margin-right: 1%;
+}
+
+#logOut{
+    text-align: right;
+}
+.row {
+    width:100%;
+    margin-top:50px;
+    background:#1A1A1A;
+    border-bottom: 3px solid #37258c;
+    display: grid;
+    grid-template-columns: 35% auto 35%;
+    align-items: center;
+}
+
+#price-container {
+    margin-left: 20%;
+    background:#353535;
+    padding: 0 10px;
+    text-align:center;
+}
+#goal-container {
+    padding:20px;
+}
+.subtext {
+    font-size:.8em;
+    text-transform:uppercase;
+    margin-bottom: 10px;
+}
+img {
+    width: 20px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+}
+
+button {
+    float:right;
+    background:#242b7f;
+    border:none;
+    color:#fff;
+    text-transform:uppercase;
+    padding:10px;
+    margin-right: 30px;
+    cursor:pointer;
+}
+.graphType{
+   padding: 20px;
+}
+#graphTypebtn{
+    float: left;
+    margin-top: 20px;
+}
+
+#newWindowBtc, #closeNewWinBtc{
+    background-color: #c98c42;
+}
+
+.testh{
+    height: 470px;
+    width: 900px;
+    margin: 0 auto;
+    
+
+}
+h3{
+    font-size: 1.6em;
+    margin-left: 50px;
+}
+
+.topRow{
+   border-bottom: 3px solid #37258c;
+}
+#headlinesDown, #headlinesDown2{
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+}
+#headlinesPlus, #headlinesPlus2{
+    color: green;
+    font-weight: 700;
+}
+#goldSubmit, #BseSubmit, #BtcSubmit{
+    width: 100px;
+    /*float: right;*/
+}
+#goldInq{
+    width: 150px;
+    /*float: right;
+    margin-left: 100px;*/
+}
+
+#searchBox{
+    float: right;
+    margin-left: 90px;
+}
+#footer{
+    padding-top: 100px;
+}
+/*input{
+    height: 80px;
+    /*width: 40px;*/
+/*}*/
+input{
+    color: black;
+}
+#but{
+    background-color: green;
+    float: right;
+}
+a{
+    text-decoration: none;
+}

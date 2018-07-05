@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>statistics monitoring app</title>
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="row">
+      <div id="price-container">
+        <p class="subtext">Current BTC USD</p>
+        <h1 id="price">Loading..</h1>
+      </div>
+      <div id="goal-container">
+        <p><img src="../assets/images/up.svg"><span id="targetPrice">Choose a Target Price</span></p>
+      </div>
+      <div id="right-container">
+        <!-- <button id="notifyBtn">Notify me when..</button> -->
+        <button id="closeNewWinBtc"><a href="index.html">back to main Window</a> </button>
+      </div>
+    </div>
+    <div>
+    	<h3><i class="fa fa-btc" aria-hidden="true"></i> Last 5 days Bitcoin Line chart</h3>
+    </div>
+    <div class="testh">
+        <canvas id="ChartBtc" class="fullGraph"></canvas>
+    </div>
+    <div>
+    	<h3><i class="fa fa-btc" aria-hidden="true"></i> Last 5 days Bitcoin Bar chart</h3>
+    </div>
+    <div class="testh">
+        <canvas id="ChartBtc2" class="fullGraph"></canvas>
+    </div>
+
+    <!-- <script src="index.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+    <script type="text/javascript" src="newWinBtc.js"></script>
+</body>
+</html>

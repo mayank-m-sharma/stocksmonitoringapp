@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stocks monitoring app</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="../assets/css/home.css">
+
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+  <source src="stockvid2.mp4" type="video/mp4">
+</video>
+ 
+ <div class="contentVid">
+  <!-- <form name="myForm" > -->
+      <div class="form">
+          <div id="signup">   
+          <h1>Sign Up</h1>
+          
+         <!--  <form action="/" method="post"> -->
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <!-- <label>
+                First Name<span class="req">*</span>
+              </label> -->
+              <input type="text" placeholder="Full Name" id="username" required >
+            </div>
+        
+            <div class="field-wrap">
+             <!--  <label>
+                Last Name<span class="req">*</span>
+              </label> -->
+              <input type="text" placeholder="Phone"  id="phone" >
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <!-- <label>
+              Email Address<span class="req">*</span>
+            </label> -->
+            <span id="emailError"></span>
+            <span id="emailNoError"></span>
+            <input type="email"  placeholder="Email" name="email" id="emailField" required>
+
+          </div>
+          
+          <div class="field-wrap">
+           <!--  <label>
+              Set A Password<span class="req">*</span>
+            </label> -->
+            <input type="password"  placeholder="Password" id="passField" required >
+          </div>
+          
+          <button type="submit" class="button button-block" id="insertUser" />Get Started</button>
+          <!-- <button id="clickhere">click to check</button> -->
+          <!-- </form> -->
+       <a href="home.html" class="pull-right">Already a member? Login here</a>
+<a href="signup.html" id="dummyLink2" aria-hidden="true"></a>
+<a href="home.html" id="dummyLink1" aria-hidden="true"></a>
+<!-- <button class="btn btn-default btn-block" id="startBtn">Login as a guest</button>
+ --> </div>
+     <!-- </form>  -->
+      </div>    
+</body>
+<!-- <script type="text/javascript">
+  function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}
+</script> -->
+<script type="text/javascript" src="startsignup.js"></script>
+</html>

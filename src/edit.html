@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard | Stocks monitoring app</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/Dashboard.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<aside class="user-dashboard">
+<!--    <div class="user-details-container">
+      <a href="#" class="avatar user-profile">
+         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/137754/user.jpg"/>
+      </a>
+      <a href="#" class="user-settings">
+         <i class="stroke-config"></i>
+      </a>
+   </div> -->
+      <h2 id="logOut"><a id="logA" href="home.html"> Logout </a></h2>
+
+   <nav class="main">
+      <h5>Menu</h5>
+      <ul class="nav-container">
+           <li class="nav-item">
+           <span><a href="dashboard.html" > Dashboard</a></span>
+         </li> 
+         <!-- <li class="nav-item" id="dasbo">
+          <span> General settings</span>
+         </li> -->
+         <li class="nav-item">
+           <span><a href="userTarget.html"> Previously made targets</a></span>
+         </li>
+       
+         <li class="nav-item">
+            <span><a href="acsetting.html" class="active">Account settings > Edit details</a></span>
+         </li>
+        <!--  <li class="nav-item">
+           
+         </li>
+         <li class="nav-item">
+            <span>time</span>
+            <ul class="subnav">
+               <li><a href="#">option 1</a></li>
+               <li><a href="#">option 2</a></li>
+               <li><a href="#">option 3</a></li>
+               <li><a href="#">option 4</a></li>
+            </ul>
+         </li> -->
+      </ul>
+   </nav>
+</aside>
+<main class="main">
+   <header class="main">
+     <!--  <h5>Hello <span id="dashName"></span> Check out your latest stats.</h5> -->
+      
+      <!-- <form class="input-container">
+         <label>Search</label>
+         <input type="search">
+      </form> -->
+   </header>
+   <div class="scroll-container">
+      <div class="content-container">
+         <section class="content-section">
+            <div class="content-item">
+               <div class="content-header">
+                  <h5>Edit details</h5>
+                  <a href="#" class="content-menu"><i class="stroke-more"></i></a>
+               </div>
+               <div class="row">
+                 <div class="col-md-6" id="sideDit">
+                   <div class="content-body">
+                    <div class="container" id="mainBox">
+                      <h3>username:<span id="displayName"> </span></h3>
+                    <label style="margin-right: 3%;">Change Username </label>  <input type="text" id="editUsername">
+                      <h3>Email   :<span id="displayEmail"> </span></h3>
+                     <label style="margin-right: 8%;">Change Email</label> <input type="text" id="editEmail">
+                      <h3>Phone   :<span id="displayPhone"> </span></h3>
+                      <label style="margin-right: 1%;">Change ph number </label><input type="text" id="editPhone">
+                      
+                      <div id="spacing"></div>
+                      
+                  <!-- <h3>Date of registration :--> 
+
+                  </div>
+
+                </div>
+                 </div>
+                 <div class="col-md-6">
+                   <h3>Change password</h3>
+                   <label style="margin-right: 3%;">Current <br>password: </label><input type="password" id="currPass">
+                   <hr>
+                   <label style="margin-right: 2%;">New <br>password:</label><input type="password" id="newPass">
+                 </div>
+               </div>
+               <button id="saveChanges" class="btn btn-primary btn-block">Save changes</button>
+            </div>
+         </section>
+      </div>
+   </div>
+</main>
+<!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+  	
+  		$('li.nav-item').click( function() {
+   $(this).toggleClass('open');
+});
+  </script> -->
+<script type="text/javascript" src="edit.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js"></script>
+</body>
+</html>

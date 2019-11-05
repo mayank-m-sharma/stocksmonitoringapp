@@ -10,8 +10,8 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
   service: 'hotmail',
   auth: {
-    user: 'mayanksharma-@hotmail.com',
-    pass: '!1mayankshatmega01031997'
+    user: 'YOUR EMAIL HERE',
+    pass: 'YOUR PASS HERE'
   }
 });
 var con = mysql.createConnection({
